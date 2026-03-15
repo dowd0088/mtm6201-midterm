@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6201 Midterm</title>
-    <link rel="stylesheet" href="css/main.css"
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lato:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-     <header class="siteheader">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="images/my-coffee-shop-logo.svg">
-            </a>
 
-            <nav class="sitenavigation">
-                <ul class="listnavigation">
+    
+    <!-- Header -->
+     <header aria-roledescription="mainheader" id="siteheader">
+        <div class="container">
+            <nav class="skip-links">
+                <ul>
+                    <li><a href="#nav"></a>Skip to Nav</li>
+                    <li><a href="#main" id="main-content"></a>Skip to Main Content</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="site-header">
+            <div class="site-logo">
+            <a href="#"><img src="./images/my-coffee-shop-logo.svg" alt="coffee shop logo"></a> 
+            </div>
+                
+            <nav role="navigation" class="site-navigation">
+                <ul id="listnavigation">
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#location">Locations</a></li>
@@ -147,10 +159,6 @@
                 </div>
             </div>
      </section>
-
-
-
-
 
      <footer class="sitefooter">
         <div class="container">
