@@ -7,6 +7,75 @@
     --beige: #f3f0e9;
 }
 
+/* About Us Section CSS */
+
+.abouttext h2 {
+    color: var(--gold);
+    font-size: large;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.abouttext h3 {
+    font-size: xx-large;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.abouttext p {
+    line-height: 1.4;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.abouttext p:last-child {
+    line-height: 1.4;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* CSS for the button */
+
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    font-family: "Lato", sans-serif;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: underline;
+    border: 2px solid #d69e3d;
+    transform:scale(1.2);
+}
+
+.button:active {
+    background: transparent;
+    color:#000000;
+    text-decoration: underline;
+    border: 2px solid #d69e3d;
+    transform: scale(1.1);
+}
+
+.aboutimage img {
+    width: 100%;
+}
+
+.aboutimage {
+    margin: 1rem;
+}
+
+
 /* Testimonials CSS */
 
 .testimonials {
