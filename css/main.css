@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@300;400;700&display=swap");
 
 :root {
     --white: #ffffff;
@@ -15,6 +14,40 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+}
+
+/* Font sizes that are optimal for mobile */
+
+h1 {
+    font-size: 2.027rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.802rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1.424rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--beige);
+    font-family: "Lato", sans-serif;
 }
 
 /* CSS For the skip links */
@@ -151,39 +184,6 @@
     transform: scale(1.2);
 }
 
-/* Font sizes that are optimal for mobile */
-
-h1 {
-    font-size: 2.027rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 800;
-}
-
-h2 {
-    font-size: 1.802rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h3 {
-    font-size: 1.424rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-p {
-    font-size: 1rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-body {
-    background-color: var(--beige);
-}
-
 /* CSS for the photo gallery section */
 
 .welcome-container {
@@ -249,30 +249,253 @@ body {
 /* Why Visit Us Section CSS */
 
 .whyvisit h2 {
-    
+    color: var(--gold);
+    font-size: large;
+    text-align: center;
+    padding-top: 3rem;
 }
+
+.whyvisit h3 {
+    font-size: xx-large;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.featurecontainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.featurecontainers h3 {
+    font-size: xx-large;
+    padding: 0.5rem;
+}
+
+/* Container 1 - Fair Trade CSS */
+
+.fair-trade {
+    display: flex;
+    width: 30%;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.container-1 p {
+    font-size: large;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.container-1 h2 {
+    color:#000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container 2 - Baked Goods */
+
+.baked-goods {
+    display: flex;
+    width: 30%;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.container-2 p {
+    font-size: large;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.container-2 h4 {
+    color:#000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container 3 - Made With Love */
+
+.made-with-love {
+    display: flex;
+    width: 30%;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.container-3 p{
+    font-size: large;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.container-3 h4 {
+    color:#000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+.container-1 + .container-2 + .container-3 {
+    padding-bottom: 1rem;
+}
+
+/* CSS For image optimization */
+
+.banners img {
+    width: 100%;
+}
+
+.banners {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banners::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Menu and Location CSS */
+
+.menuandlocation {
+    position: absolute;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1.4;
+    color:#ffffff;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    left: 11%;
+    right: 12%;
+    bottom: 13%
+}
+
+.menu {
+    padding-bottom: 3rem;
+}
+
+.menu h2 {
+    color: var(--gold);
+    font-size: large;
+    font-weight: 500;
+}
+
+.menu h3 {
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.menubutton {
+    padding-top: 1rem;
+}
+
+.menubutton a {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.menubutton a:hover {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: underline;
+    border: 3px solid #ffffff;
+    transform: scale(1.2);
+}
+
+.menubutton a:active {
+    color: #ffffff;
+    background-color: #d69e3d;
+    border: 2px solid #ffffff;
+    transform: scale(1.1);
+}
+
+.location {
+    padding-top: 0.75rem;
+}
+
+.location h2 {
+    color: var(--gold);
+    font-size: large;
+    font-weight: 500;
+}
+
+.location h3 {
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
 
 /* About Us Section CSS */
 
+.usabout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.aboutimage img {
+    width: 100%;
+    height: auto;
+}
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
 .abouttext h2 {
     color: var(--gold);
-    font-size: large;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
+    font-size: small;
+    font-weight: 600;
 }
 
 .abouttext h3 {
     font-size: xx-large;
-    font-weight: 600;
-    padding-bottom: 1rem;
-    margin-left: 1rem;
+    font-weight: 800;
 }
 
 .abouttext p {
     line-height: 1.4;
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-top: 1rem;
 }
 
 .abouttext p:last-child {
@@ -285,6 +508,11 @@ body {
 /* CSS for the button */
 
 .button2 {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.learnmorebutton {
     background-color: #000000;
     color: #ffffff;
     text-decoration: none;
@@ -296,7 +524,7 @@ body {
     transition: 0.5s;
 }
 
-.button:hover {
+.learnmorebutton:hover {
     background-color: #ffffff;
     color: #000000;
     text-decoration: underline;
@@ -304,7 +532,7 @@ body {
     transform:scale(1.2);
 }
 
-.button:active {
+.learnmorebutton:active {
     background: transparent;
     color:#000000;
     text-decoration: underline;
@@ -313,11 +541,12 @@ body {
 }
 
 .aboutimage img {
-    width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .aboutimage {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 
@@ -484,3 +713,506 @@ body {
     font-size: large;
     padding: 2rem;
 }
+
+/* Optimizations for screens with a min width of 768px */
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        grid-template-areas: 
+        "yummycoffee yummycoffee coffeebeans pourdacoffee"
+        "yummycoffee yummycoffee coffeetogether happylittleworker";
+        padding: 1rem;
+    }
+
+    .featurecontainers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1rem;
+    }
+
+    .featurecontainers h2 {
+        font-size: x-large;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+    }
+
+    .container-1 p {
+        font-size: small;
+        text-align: center;
+        margin: 0;
+        padding-top: 0.25rem;
+    }
+
+    .container-2 {
+        grid-column: 3;
+    }
+
+    .container-2 p {
+        font-size: small;
+        text-align: center;
+        margin: 0;
+        padding-top: 0.25rem;
+    }
+
+    .container-3 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .container-3 p {
+        font-size: small;
+        text-align: center;
+        margin: 0;
+        padding-top: 0.25rem;
+    }
+
+    .fair-trade {
+        width: 50%;
+    }
+
+    .baked-goods {
+        width: 50%;
+    }
+
+    .made-with-love {
+        width: 50%;
+    }
+
+    /* Banner Adjustments */
+    
+    .menuandlocation {
+        left: 5%;
+        right: 10%;
+        bottom: 30%;
+    }
+
+    /* Testimonials Adjustments */
+
+    .person-1 p {
+        position: absolute;
+        color:#ffffff;
+        font-size: x-large;
+        line-height: 1.4;
+        margin: 0;
+        top: 75%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .person-1 p:last-child {
+        color: #d69e3d;
+        font-size: large;
+        top: 94%;
+        left: 30%;
+    }
+
+    .person-2 p {
+        position: absolute;
+        color:#ffffff;
+        font-size: large;
+        line-height: 1.4;
+        margin: 0;
+        top: 75%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    .person-2 p:last-child {
+        color: #d69e3d;
+        font-size: large;
+        top: 93%;
+        left: 27%;
+    }
+
+    .person-3 {
+        color:#ffffff;
+        font-size: large;
+        line-height: 1.4;
+        margin: 0;
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+
+    .people {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 4rem;
+    }
+
+    .people p {
+        font-size: small;
+    }
+
+    /* Footer Adjustments */
+
+    .sitefooter {
+        text-align: center;
+        font-size: small;
+    }
+
+    /* About us section adjustments */
+
+    .abouttext {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .abouttext p {
+        font-size: small;
+    }
+
+    .abouttext h2 {
+        color: var(--gold);
+        font-size: large;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        margin: 1rem;
+    }
+
+    .abouttext h3 {
+        font-size: x-large;
+        font-weight: 800;
+        padding-bottom: 1rem;
+        margin-left: 1rem;
+    }
+
+    /* Adjusting the second banner and location/menu section */
+
+    .menuandlocation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 2rem;
+    }
+
+    .banners {
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banners::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .location {
+        margin-left: 4rem;
+        padding-top: 0;
+    }
+
+     .location h3 + .menu h3 {
+        font-size: x-large;
+        font-weight: 500;
+     }
+
+
+}
+
+/* Optimizations for screens with a min width of 1100px */
+
+@media screen and (min-width: 1100px) {
+    .site-header {
+        display: flex;
+    }
+
+    .site-logo {
+        margin-left: 0.75rem;
+    }
+
+    .site-navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 0;
+    }
+
+    .banner-content p{
+        font-size: smaller;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin: 0.5rem;
+    }
+
+    .banner-content h1 {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    .button1 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    .button1 a {
+        font-size: small;
+    }
+
+    .gallery {
+        padding: 2rem;
+    }
+
+    .theheadingsofdoom h2 {
+        position: relative;
+        top: -50px;
+    }
+
+
+    .featurecontainers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1.5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .whyvisit h2 {
+        color: var(--gold);
+        font-size: large;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+
+    .whyvisit h3 {
+        font-size: xx-large;
+        color: #000000;
+        padding: 0;
+    }
+
+    .container-1 h2 {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    .container-1 p {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .container-2 h2 {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    .container-2 p {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .container-2 {
+        grid-column: 2;
+    }
+
+    .container-3 h2 {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    .container-3 p {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .container-3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .fair-trade {
+        display: flex;
+        justify-self: center;
+        width: 27%;
+        padding: 1rem;
+    }
+
+    .baked-goods {
+        display: flex;
+        justify-self: center;
+        width: 27%;
+        padding: 1rem;
+    }
+
+    .made-with-love {
+        display: flex;
+        justify-self: center;
+        width: 27%;
+        padding: 1rem;
+    }
+
+    /* Adjustments to the banner */
+
+    .menuandlocation h2 {
+        padding: 0;
+    }
+
+    .menuandlocation h3 {
+        font-size: medium;
+    }
+
+    .menuandlocation {
+        left: 5%;
+        right: 10%;
+        bottom: 25%;
+    }
+
+    .menu h2 + .location h2 {
+        font-weight: 400;
+    }
+
+    .menu h3 {
+        font-size: x-large;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .location h3 {
+        font-size: x-large;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .menubutton {
+        padding-top: 2rem;
+    }
+
+    /* Adjustments to the About Us Sections */
+
+    .usabout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+    .aboutimage {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+    }
+
+    .abouttext {
+    padding-top: 3rem;
+    margin-right: 2rem;
+
+  }
+
+  .abouttext h2 {
+  padding-top: 2rem;
+  color: #d69e3d;
+  font-size: xx-large;
+  padding-bottom: 0.5rem;
+  margin-left: -340px;
+}
+
+.abouttext h3 {
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.abouttext p {
+    font-size: large;
+}
+
+.learnmorebutton {
+    position: relative;
+    bottom: -180px;
+    left: -350px;
+}
+
+
+    }
+
+    /* Adjustments to the Testimonials Section */
+    
+    .testimonials {
+        padding: 3rem;
+    }
+
+    .testimonials h2 {
+        color: var(--gold);
+        font-size: medium;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+
+    .testimonials h3 {
+        color: #ffffff;
+        font-size: x-large;
+        font-weight: 700;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .person-1 p {
+        color: #ffffff;
+        position: absolute;
+        font-size: medium;
+        line-height: 1.4;
+        top: 80%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+
+    .person-1 p:last-child {
+        color:#d69e3d;
+        font-size: x-large;
+        top: 94%;
+        left: 27%;
+    }
+
+     .person-2 p {
+        color: #ffffff;
+        position: absolute;
+        font-size: medium;
+        line-height: 1.4;
+        top: 78%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    .person-1 p:last-child {
+        color:#d69e3d;
+        font-size: x-large;
+        top: 93%;
+        left: 26%;
+    }
+
+     .person-3 p {
+        color: #ffffff;
+        position: absolute;
+        font-size: medium;
+        line-height: 1.4;
+        top: 78%;
+        left: 36%;
+        transform: translate(-50%, -50%);
+    }
+
+    .person-1 p:last-child {
+        color:#d69e3d;
+        font-size: x-large;
+        top: 93%;
+        left: 26%;
+    }
+
+
